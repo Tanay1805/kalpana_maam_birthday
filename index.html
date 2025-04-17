@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday, Ma'am!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      font-family: 'Raleway', sans-serif;
+      background: linear-gradient(-45deg, #fce4ec, #f8bbd0, #f48fb1, #f06292);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #333;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      padding: 40px;
+      width: 90%;
+      max-width: 600px;
+      text-align: center;
+      animation: floatIn 1s ease-out;
+    }
+
+    @keyframes floatIn {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #e91e63;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .profile-img:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-size: 2em;
+      color: #e91e63;
+      margin-bottom: 15px;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid #e91e63;
+      width: 0;
+      animation: typing 3s steps(40, end) forwards;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    p {
+      font-size: 1.1em;
+      margin: 20px 0;
+    }
+
+    .quote {
+      margin-top: 30px;
+      font-style: italic;
+      color: #555;
+      border-left: 4px solid #e91e63;
+      padding-left: 15px;
+      font-size: 1.05em;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #999;
+    }
+
+    .btn {
+      margin-top: 30px;
+      background: #e91e63;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 50px;
+      font-size: 1em;
+      cursor: pointer;
+      box-shadow: 0 0 15px rgba(233, 30, 99, 0.6);
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(233, 30, 99, 0.8);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="https://i.postimg.cc/JGh6HBzH/kalpana-maam.png" alt="Kalpana Ma'am" class="profile-img"/>
+    <h1>Happy Birthday, Ma'am!</h1>
+    <p>Your kindness, brilliance, and mentorship have shaped not just our minds—but our hearts too. Here's to you and your special day! 💖</p>
+    
+    <div class="quote">“Her lectures don’t just teach us subjects, they teach us life. We’re grateful for a mentor like you!”</div>
+
+    <button class="btn">Send Your Wishes 💌</button>
+
+    <div class="footer">— With love, your students 🌸</div>
+  </div>
+
+</body>
+</html>
